@@ -44,16 +44,18 @@ gulp.task('default', function() {
 
 ### 프로젝트 구조
 
-root
-.babelrc
-gulpfile.js
-package.json
-/node_modules
------/es6   # 노드 소스
------/dist
------/public # 브라우저 소스
-------------/es6
-------------/dist
+```
+.
++-- .babelrc
++-- gulpfile.js
++-- package.json
++-- /node_modules
++-- /es6   # 노드 소스
++-- /dist
++-- /public # 브라우저 소스
+|   +-- es6
+|   +-- dist
+```
 
 * 서버쪽(node), 클라이언트(브라우저) 코드를 모두 포함하는 프로젝트가 많으므로 양쪽 다 만들었습니다.
 * 브라우저에 보내는 자바스크립트는 원래 공개된(public) 것이고, 이런 식으로 저장하는 프로젝트가 많습니다.
